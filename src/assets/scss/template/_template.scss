@@ -3,7 +3,7 @@
 
 // Body Styles 
 *{
-  outline:1px solid green;
+  outline:1px solid hotpink;
 }
 
 body,
@@ -25,21 +25,20 @@ html,
   background: #ff6a10;
   background-color:#ff6a10;
   .columns{
-    padding-top: 20px;
+    padding-top: 20px!important;
     padding-bottom: 20px!important;
     padding-left: 20px!important;
     padding-right: 20px!important;
+    
   }
   .logo-white{
     width:128px;
   }
   #user{
-    width:35px;
+    width:30px;
   }
 }
-.icons{
-  width:20px;
-}
+
 
 .sub-header{
   background: #d65600;
@@ -49,6 +48,26 @@ html,
     padding-bottom: 5px!important;
     padding-left: 10px!important;
     padding-right: 10px!important;
+    span{
+      display:block; height: 20px; width:2px; background:#ff6a10;
+    }
+    #car-icon{
+      margin-left: 10px;
+      @media only screen and (max-width: #{$global-breakpoint}) {
+        margin-left: 0px;
+      }
+    }
+    #hotel-icon{
+      margin-left: 5px;
+      @media only screen and (max-width: #{$global-breakpoint}) {
+        margin-left: 0px;
+      }
+    }
+    
+  }
+
+  .icons{
+    width:20px;
   }
 
   .sub-header__divider{
@@ -64,9 +83,23 @@ html,
   }
   img{
     margin-right:10px;
+  
   }
-  span{
-    display:block; height: 20px; width:2px; background:#ff6a10;
+}
+
+.deal{
+  background:$kayak-darkcolor;
+  .columns{
+  padding-top: 30px !important;
+  padding-bottom: 30px!important;
+  padding-left: 20px!important;
+  padding-right: 20px!important;
+  }
+  h1{
+    color:white;
+  }
+  p{
+    color:white;
   }
 }
 

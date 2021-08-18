@@ -24,7 +24,7 @@ Codingphase.com's [HTML Email Frameworks](https://codingphase.teachable.com/p/ht
 ```
 background: #f1f4f7
 light orange: #ff6a10;
-dark orange : #f1f4f7
+dark orange : 
 greyish blue: #222d37;
 dark blue: #14191e;
 ```
