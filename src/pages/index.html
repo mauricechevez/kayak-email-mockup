@@ -1,55 +1,38 @@
 ---
-layout: index-layout
-subject: My Email Templates
+layout: kayak
+subject: Today's Great Vacation Deals
 ---
-
-<spacer size="16"></spacer>
-
 <container>
-
-  <spacer size="24"></spacer>
-  
-  <row>
-    <columns small="12">
-
-    <p class="lead">Hi there!</p>
-    <p style="color: #484848; line-height: 1.5;">Thanks for downloading <a href="https://get.foundation/emails/docs/">Foundation for Emails!</a> Your days of coding up painful HTML emails are officially over. You’ll soon be cranking out some slick, responsive emails in no time! To help get you up and running, we've put together 11 templates for the most common email use cases including newsletters, transactional emails, and marketing blasts. Feel free to customize them to your hearts content.</p>
-
-    <spacer size="16"></spacer>
-
-    <center>
-      <menu class="vertical">
-        <item href="{{root}}basic.html" target="_blank">Basic Template</item>
-        <item href="{{root}}drip.html" target="_blank">Drip Template</item>
-        <item href="{{root}}hero.html" target="_blank">Hero Template</item>
-        <item href="{{root}}marketing.html" target="_blank">Marketing Template</item>
-        <item href="{{root}}newsletter.html" target="_blank">Newsletter Template</item>
-        <item href="{{root}}newsletter-2.html" target="_blank">Newsletter 2 Template</item>
-        <item href="{{root}}order.html" target="_blank">Order Template</item>
-        <item href="{{root}}password.html" target="_blank">Password Template</item>
-        <item href="{{root}}sidebar.html" target="_blank">Sidebar Template</item>
-        <item href="{{root}}sidebar-hero.html" target="_blank">Sidebar Hero Template</item>
-        <item href="{{root}}welcome.html" target="_blank">Welcome Template</item>
-      </menu>
-    </center>
-
-    <spacer size="16"></spacer>
-
-    <p>Happy Coding,</p>
-    <p>The Foundation Team</p>
-
-
-    <spacer size="16"></spacer>
-
+<row class="collapse header">
+    <columns class="columns">
+    <img src="{{ root }}/assets/img/logo.png" alt="Kayak Logo" class="logo-white">
     </columns>
-  </row>
+    <columns class="text-right"><img src="{{root}}/assets/img/user.png" alt="" id="user" class="float-right"></columns>
+</row>
+<!--Deal of Day section-->
+<row class="sub-header">
+    <columns large="1"></columns>
+    <columns style="width:90%;">
+        <row>
+            <columns>
+            <a href="#" class="text-right"><img class="icons float-left" src="{{root}}assets/img/airplane.png">Flights</a>
+            </columns>
+            <columns style="width:1%" class="sub-header__lines"><span></span></columns>
+            <columns>
+                <a href="#" class="text-center"><img class="icons float-left" src="{{root}}assets/img/bed.png">Hotels</a>
+            </columns>
+            <columns style="width:1%" class="sub-header__lines"><span></span></columns>
+            <columns>
+                <a href="#" class="text-center"><img class="icons float-left" src="{{root}}assets/img/car.png">Cars</a>
+            </columns>
+            <columns style="width:1%" class="sub-header__lines"><span></span></columns>
+            <columns>
+                <a href="#" class="text-center"><img class="icons float-left" src="{{root}}assets/img/umbrella.png">Packages</a>
+            </columns>
+        </row>
+    </columns>  
+    
+    <columns large="1"></columns>
+</row>
+
 </container>
-
-<spacer size="16"></spacer>
-
-<center>
-  <small>Keep on keepin' on. &lt;3 <a style="color: #cacaca; text-decoration: underline;" href="https://zurb.com/">ZURB</a> </small>
-</center>
-
-<spacer size="16"></spacer>
-

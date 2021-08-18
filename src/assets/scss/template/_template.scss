@@ -2,10 +2,14 @@
 // Feel free to remove these styles for production!
 
 // Body Styles 
+*{
+  outline:1px solid green;
+}
+
 body,
 html, 
 .body {
-  background: #f3f3f3 !important;
+  background: #f1f4f7 !important;
 }
 
 .container.header {
@@ -18,7 +22,52 @@ html,
 
 // Full Width Headers
 .header {
-  background: #8a8a8a;
+  background: #ff6a10;
+  background-color:#ff6a10;
+  .columns{
+    padding-top: 20px;
+    padding-bottom: 20px!important;
+    padding-left: 20px!important;
+    padding-right: 20px!important;
+  }
+  .logo-white{
+    width:128px;
+  }
+  #user{
+    width:35px;
+  }
+}
+.icons{
+  width:20px;
+}
+
+.sub-header{
+  background: #d65600;
+  background-color:#d65600;
+  .columns{
+    padding-top: 5px;
+    padding-bottom: 5px!important;
+    padding-left: 10px!important;
+    padding-right: 10px!important;
+  }
+
+  .sub-header__lines{
+    padding-top: 5px;
+    padding-bottom: 0px!important;
+    padding-left: 0px!important;
+    padding-right: 0px!important;
+  }
+  a{
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  img{
+    margin-right:10px;
+  }
+  span{
+    display:block; height: 20px; width:2px; background:#ff6a10;
+  }
 }
 
 .header .columns {
