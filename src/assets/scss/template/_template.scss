@@ -20,10 +20,18 @@ html,
   border-top: 8px solid #663399;
 }
 
+// Specific Item templates
+.price{
+  font-weight: 900;
+  -moz-font-size:20px;
+  font-size: 20px;
+}
+
 // Full Width Headers
 .header {
   background: #ff6a10;
   background-color:#ff6a10;
+  white-space: nowrap;
   .columns{
     padding-top: 20px!important;
     padding-bottom: 20px!important;
@@ -43,6 +51,7 @@ html,
 .sub-header{
   background: #d65600;
   background-color:#d65600;
+  white-space: nowrap;
   .columns{
     padding-top: 5px;
     padding-bottom: 5px!important;
@@ -100,6 +109,20 @@ html,
   }
   p{
     color:white;
+    font-weight: 900;
+    text-align: center;
+  }
+  img{
+    margin-bottom: 30px;
+  }
+  .small-text{
+    font-size: 14px;
+    font-weight: 900;
+    margin-bottom: 1px;
+  }
+  .smaller-text{
+    font-size: 10px;
+    font-weight: 500;
   }
 }
 

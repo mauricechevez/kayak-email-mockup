@@ -3,30 +3,25 @@ layout: kayak
 subject: Today's Great Vacation Deals
 ---
 <container>
-<row class="header">
-    <columns small="6" large="12" >
-    <img src="{{ root }}/assets/img/logo.png" alt="Kayak Logo" class="logo-white">
-    </columns>
-    <columns small="6" large="12" ><img src="{{root}}/assets/img/user.png" alt="" id="user" class="float-right"></columns>
-</row>
+{{> header}}
 <row class="sub-header">
     <columns class="show-for-large" large="1"></columns>
     <columns style="width:90%;">
         <row>
-            <columns small="4" large="3" style="text-align: center !important;">
-            <a href="#" class="text-center"><img class="icons float-left" src="{{root}}assets/img/airplane.png">Flights</a>
+            <columns small="4" large="3">
+                <a href="#" class="text-center"><img class="icons" style="display: inline-block; vertical-align: bottom;" src="{{root}}assets/img/airplane.png">Flights</a>
+             </columns>
+            <columns style="width:1%" class="sub-header__divider show-for-large"><span></span></columns>
+            <columns small="4" large="3">
+                <a href="#" class="text-center"><img class="icons" style="display: inline-block; vertical-align: bottom;"  id="hotel-icon" src="{{root}}assets/img/bed.png">Hotels</a>
             </columns>
             <columns style="width:1%" class="sub-header__divider show-for-large"><span></span></columns>
             <columns small="4" large="3">
-                <a href="#" class="text-center"><img class="icons float-left"  id="hotel-icon" src="{{root}}assets/img/bed.png">Hotels</a>
-            </columns>
-            <columns style="width:1%" class="sub-header__divider show-for-large"><span></span></columns>
-            <columns small="4" large="3">
-                <a href="#" class="text-center";><img class="icons float-left" id="car-icon" src="{{root}}assets/img/car.png">Cars</a>
+                <a href="#" class="text-center";><img class="icons" style="display: inline-block; vertical-align: bottom;" id="car-icon" src="{{root}}assets/img/car.png">Cars</a>
             </columns>
             <columns style="width:1%" class="sub-header__divider show-for-large"><span></span></columns>
             <columns class="show-for-large" small="4" large="3">
-                <a href="#" class="text-center"><img class="icons float-left" src="{{root}}assets/img/umbrella.png">Packages</a>
+                <a href="#" class="text-center"><img class="icons" style="display: inline-block; vertical-align: bottom;" src="{{root}}assets/img/umbrella.png">Packages</a>
             </columns>
         </row>
     </columns>  
@@ -38,8 +33,9 @@ subject: Today's Great Vacation Deals
     <h1 class="text-center">Deal of the Day</h1>
     <img src="{{root}}/assets/img/ireland.png">
     <p>Ireland: 8 days with air, hotel and care rental. use promo code CFDL110 to save. Price reflects NYC departure. Other cicties available.</p>
-    <p>Save $110 with code</p>
-    <p class="small-text">dfasfsd</p>
+    <p  class="small-text">Save $110 with code</p>
+    <p class="smaller-text">Gate 1 Travel</p>
+    <p class="price">$650+</p>
     </columns>
 </row>
 </container>
