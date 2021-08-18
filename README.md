@@ -15,7 +15,7 @@ This is the intended result.
 ![project preview](./src/assets/img/email.png)
 
 ## Current Results
-Comming soon.....
+![Current screenshot](./img-screenshots/current-aug8.png)
 
 ## Original project idea
 Codingphase.com's [HTML Email Frameworks](https://codingphase.teachable.com/p/html-email-frameworks)
