@@ -22,9 +22,27 @@ html,
 
 // Specific Item templates
 .price{
-  font-weight: 900;
+  font-weight: 700;
   -moz-font-size:20px;
   font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.icons{
+  width:20px;
+  @media only screen and (max-width: #{$global-breakpoint}){
+    width:20px !important;
+  }
+}
+
+.btn-deal{
+  font-weight: 900;
+  font-size: 14px;
+  padding:5px 50px;
+  border:white 2px solid;
+  border-radius: 3px;
+  color: white;
+  text-align: center;
 }
 
 // Full Width Headers
@@ -75,9 +93,7 @@ html,
     
   }
 
-  .icons{
-    width:20px;
-  }
+
 
   .sub-header__divider{
     padding-top: 5px;
@@ -106,6 +122,12 @@ html,
   }
   h1{
     color:white;
+    font-weight: 800;
+    margin-bottom: 20px;
+  }
+  a{
+    color: white;
+    text-align: center !important;
   }
   p{
     color:white;
