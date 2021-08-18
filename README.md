@@ -10,7 +10,12 @@ This will be a fully responsive mockup of a Kayak.com marketing email.
 * JavaScript
 
 ## Preview of Project
+This is the intended result.
 
+![project preview](./src/assets/img/email.png)
+
+## Current Results
+Comming soon.....
 
 ## Original project idea
 Codingphase.com's [HTML Email Frameworks](https://codingphase.teachable.com/p/html-email-frameworks)
