@@ -46,6 +46,30 @@ The other way around this is to not stack your code. Make the closing and openin
 </column>
 Next bits of code....
 ```
+### Padding issues within nested rows/columns
+Foundations framework has built in settings in the _settings.scss_ file. One that kept throwing me off was the padding-bottom global setting. I ended up setting that to 0 so I could customize each column's padding as I'd like. This is under the "Grid" section.
+If setting the padding of column (assigned to a class) doesn't work, then select the `<th>` element and add padding there instead.
 
+### Centering content
+Though centering content works by using a `<center>` or using class of `text-align-X(left,center, or right)`, I had to center the content of the subheader by targeting the `<th>` element. 
+
+First target the .columns (`<columns>` in the HTML), then nest the `th` selector within and center your content there
+```css
+.sub-header{
+ /* selectors.... */
+  .columns{
+    padding-top: 5px;
+    padding-bottom: 5px!important;
+    padding-left: 10px!important;
+    padding-right: 10px!important;
+ /* selectors.... */
+    th{
+      text-align: center;
+    }
+  }
+}
+```
+
+---
 ### Copyright Notice
 No copyright infringment is intended. I don't own any of the assets within. This is for educational purposes only.

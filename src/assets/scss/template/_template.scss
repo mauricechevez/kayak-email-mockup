@@ -138,99 +138,52 @@ html,
 
 /* 15px padding? 25px = 40px total */
 .more-deals{
-  .more-deals__container{
-    background: #EFF2F6 ;
-    background-color: #EFF2F6 ;
-    padding-top: 10px; 
-    padding-bottom: 10px;
-    padding-left: 10px !important;
-    padding-right: 10px !important;
-  }
-  .content-area{
-    th{
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-left: 20px;
-    padding-right: 20px;
-    background-color: white;
-    width:100%;
-    }
-    
-
-    img{
-      max-width: 524px;
-      width:100%;
-      margin-bottom: 30px;
-      
-    }
-    a{
-      color: white;
-      text-align: center !important;
-    }
-    p{
-      color:black;
-      font-weight: 900;
-      text-align: center;
-    }
-    p.price{
-      color:$kayak-semidark !important;
-    }
-    .save-deal{
-      color:#1A88F3;
-    }
-    .small-text{
-      font-size: 14px;
-      font-weight: 900;
-      margin-bottom: 1px;
-    }
-    .smaller-text{
-      font-size: 10px;
-      font-weight: 500;
-    }
-    .btn-deal{
-      color:white;
-      background-color: $kayak-darkcolor;
-    }  
-  }
-  
-}
-
-.sub-footer{
+  background: #EFF2F6;
+  background-color:#EFF2F6 ;
   .columns{
-    padding-top: 30px !important;
-    padding-bottom: 30px!important;
-    padding-left: 25px!important;
-    padding-right: 25px!important;
-    border-top: 0px #EFF2F6 solid;
-    border-left: 15px #EFF2F6 solid;
-    border-right: 15px #EFF2F6 solid;
-    border-bottom: 15px #EFF2F6 solid;
-  }
-  img{
-    width: 175px;
-    margin-bottom: 30px;
-  }
-  p#still-looking{
-    color:$kayak-semidark;
-    font-weight: 900;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  p#package-text{
-    color: $kayak-semidark;
-    font-size: 15px;
-    word-wrap: normal;
-    text-align: center;
-    margin-bottom: 30px;
+      padding-top: 10px; 
+      padding-bottom: 10px !important;
+      padding-left: 10px !important;
+      padding-right: 10px !important;
+      .more-deals__details{
+        background: white;
+        background-color: white;
+        th{
+          padding-top: 20px;
+          padding-bottom: 20px;
+          padding-left: 25px; 
+          padding-right: 25px; 
+        }
+        h3{
+          font-size: 16px;
+          font-weight: 800;
+          line-height: 1.1;
+          color: $kayak-semidark;
+          margin-top: 20px;
+          margin-bottom: 15px;
+        }
+        .pct-number{
+          color:#1A88F3;
+        }
+        .small-text{
+          font-size: 14px;
+          font-weight: 900;
+          margin-bottom: 1px;
+        }
+        .smaller-text{
+          font-size: 10px;
+          font-weight: 500;
+        }
+        .btn-deal{
+          background: $kayak-darkcolor;
+          color: white;
+          border:none;
+        }
+      }
+    }
+
   }
 
-  .btn-deal{
-    color:white;
-    background-color: $kayak-darkcolor;
-  } 
-  
-
-}
 
 
 /* BUILT IN stuff below */
