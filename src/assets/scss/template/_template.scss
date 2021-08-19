@@ -2,14 +2,14 @@
 // Feel free to remove these styles for production!
 
 // Body Styles 
-*{
-  outline:1px solid hotpink;
-}
+// *{
+//   outline:1px solid hotpink;
+// }
 
 body,
 html, 
 .body {
-  background: #f1f4f7 !important;
+  background: #E0E1E7 !important;
 }
 
 .container.header {
@@ -25,7 +25,7 @@ html,
   font-weight: 700;
   -moz-font-size:20px;
   font-size: 20px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .icons{
@@ -38,11 +38,12 @@ html,
 .btn-deal{
   font-weight: 900;
   font-size: 14px;
-  padding:5px 50px;
+  padding:10px 50px;
   border:white 2px solid;
-  border-radius: 3px;
+  border-radius: 5px;
   color: white;
   text-align: center;
+
 }
 
 // Full Width Headers
@@ -65,7 +66,6 @@ html,
   }
 }
 
-
 .sub-header{
   background: #d65600;
   background-color:#d65600;
@@ -78,23 +78,11 @@ html,
     span{
       display:block; height: 20px; width:2px; background:#ff6a10;
     }
-    #car-icon{
-      margin-left: 10px;
-      @media only screen and (max-width: #{$global-breakpoint}) {
-        margin-left: 0px;
-      }
-    }
-    #hotel-icon{
-      margin-left: 5px;
-      @media only screen and (max-width: #{$global-breakpoint}) {
-        margin-left: 0px;
-      }
+    th{
+      text-align: center;
     }
     
   }
-
-
-
   .sub-header__divider{
     padding-top: 5px;
     padding-bottom: 0px!important;
@@ -147,6 +135,91 @@ html,
     font-weight: 500;
   }
 }
+
+/* 15px padding? 25px = 40px total */
+.more-deals{
+  .columns{
+    padding-top: 25px !important;
+    padding-bottom: 30px!important;
+    padding-left: 20px!important;
+    padding-right: 20px!important;
+    border-top: 15px #EFF2F6 solid;
+    border-left: 15px #EFF2F6 solid;
+    border-right: 15px #EFF2F6 solid;
+    border-bottom: 15px #EFF2F6 solid;
+  }
+  img{
+    margin-bottom: 30px;
+  }
+  a{
+    color: white;
+    text-align: center !important;
+  }
+  p{
+    color:black;
+    font-weight: 900;
+    text-align: center;
+  }
+  p.price{
+    color:$kayak-semidark !important;
+  }
+  .save-deal{
+    color:#1A88F3;
+  }
+  .small-text{
+    font-size: 14px;
+    font-weight: 900;
+    margin-bottom: 1px;
+  }
+  .smaller-text{
+    font-size: 10px;
+    font-weight: 500;
+  }
+  .btn-deal{
+    color:white;
+    background-color: $kayak-darkcolor;
+  }  
+}
+
+.sub-footer{
+  .columns{
+    padding-top: 30px !important;
+    padding-bottom: 30px!important;
+    padding-left: 25px!important;
+    padding-right: 25px!important;
+    border-top: 0px #EFF2F6 solid;
+    border-left: 15px #EFF2F6 solid;
+    border-right: 15px #EFF2F6 solid;
+    border-bottom: 15px #EFF2F6 solid;
+  }
+  img{
+    width: 175px;
+    margin-bottom: 30px;
+  }
+  p#still-looking{
+    color:$kayak-semidark;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  p#package-text{
+    color: $kayak-semidark;
+    font-size: 15px;
+    word-wrap: normal;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .btn-deal{
+    color:white;
+    background-color: $kayak-darkcolor;
+  } 
+  
+
+}
+
+
+/* BUILT IN stuff below */
 
 .header .columns {
   padding-bottom: 0;
