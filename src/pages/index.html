@@ -2,7 +2,7 @@
 layout: kayak
 subject: Today's Great Vacation Deals
 ---
-<container>
+<container style="max-width: 600px !important;">
 {{> header}}
 <!--Deal of Day section-->
 <row class="deal">
@@ -17,24 +17,27 @@ subject: Today's Great Vacation Deals
     </columns>
 </row>
 <!--More Deals section-->
-<row class="more-deals">
-    <columns class="more-deals__container">
-    <img src="{{root}}/assets/img/cancun.png" alt="">
-    <p class="text-center">Cancun: 4 nights with air and Melody Maker Cancun stay. Price reflects MIA departure, other cities available.</p>
-    <p class="text-center save-deal small-text">Save up to 65%</p>
-    <p class="text-center smaller-text">CheapCaribbean.com</p>
-    <p class="text-center price">$689+</p>
-    <p class="text-center"><a href="#" class="btn-deal">See Deal</a></p>
+<row class="more-deals ">
+    <columns class="more-deals__container" >
+    <row>
+        <columns class="content-area">
+       <img src="{{root}}/assets/img/cancun.png" alt="">
+        <p class="text-center">Cancun: 4 nights with air and Melody Maker Cancun stay. Price reflects MIA departure, other cities available.</p>
+        <p class="text-center save-deal small-text">Save up to 65%</p>
+        <p class="text-center smaller-text">CheapCaribbean.com</p>
+        <p class="text-center price">$689+</p>
+        <p class="text-center"><a href="#" class="btn-deal">See Deal</a></p>
+        </columns>
+    </row>
     </columns>
 </row>
 <!--Sub Footer-->
-<row class="sub-footer">
+<!-- <row class="sub-footer">
     <columns>
-    <center><img src="{{root}}/assets/img/airplane_dark.png" alt=""></center>
+    <center><img src="https://via.placeholder.com/180x30" alt="" style="text-align:center"></center>
     <p class="text-center" id="still-looking">Still Looking? There's more</p>
     <p class="text-center" id="package-text">Search hundreds of deals to suit your budget on flights, packages, cruises and more.</p>
     <p class="text-center"><a href="#" class="btn-deal">See All Deals</a></p>
     </columns>
-</row>
-<!-- Footer -->
+</row> -->
 </container>

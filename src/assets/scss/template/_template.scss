@@ -138,47 +138,61 @@ html,
 
 /* 15px padding? 25px = 40px total */
 .more-deals{
-  .columns{
-    padding-top: 25px !important;
-    padding-bottom: 30px!important;
-    padding-left: 20px!important;
-    padding-right: 20px!important;
-    border-top: 15px #EFF2F6 solid;
-    border-left: 15px #EFF2F6 solid;
-    border-right: 15px #EFF2F6 solid;
-    border-bottom: 15px #EFF2F6 solid;
+  .more-deals__container{
+    background: #EFF2F6 ;
+    background-color: #EFF2F6 ;
+    padding-top: 10px; 
+    padding-bottom: 10px;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
   }
-  img{
-    margin-bottom: 30px;
+  .content-area{
+    th{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: white;
+    width:100%;
+    }
+    
+
+    img{
+      max-width: 524px;
+      width:100%;
+      margin-bottom: 30px;
+      
+    }
+    a{
+      color: white;
+      text-align: center !important;
+    }
+    p{
+      color:black;
+      font-weight: 900;
+      text-align: center;
+    }
+    p.price{
+      color:$kayak-semidark !important;
+    }
+    .save-deal{
+      color:#1A88F3;
+    }
+    .small-text{
+      font-size: 14px;
+      font-weight: 900;
+      margin-bottom: 1px;
+    }
+    .smaller-text{
+      font-size: 10px;
+      font-weight: 500;
+    }
+    .btn-deal{
+      color:white;
+      background-color: $kayak-darkcolor;
+    }  
   }
-  a{
-    color: white;
-    text-align: center !important;
-  }
-  p{
-    color:black;
-    font-weight: 900;
-    text-align: center;
-  }
-  p.price{
-    color:$kayak-semidark !important;
-  }
-  .save-deal{
-    color:#1A88F3;
-  }
-  .small-text{
-    font-size: 14px;
-    font-weight: 900;
-    margin-bottom: 1px;
-  }
-  .smaller-text{
-    font-size: 10px;
-    font-weight: 500;
-  }
-  .btn-deal{
-    color:white;
-    background-color: $kayak-darkcolor;
-  }  
+  
 }
 
 .sub-footer{
