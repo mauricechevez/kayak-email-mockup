@@ -236,19 +236,27 @@ html,
         display: inline-block;
       }
       .appstores__left-column{
+        .columns{
+          .row{
+            & > tbody > tr{
+              vertical-align: middle !important;
+            }
+          }
+          
+        }
         .kayak-circle--logo{
           @media only screen and (max-width: #{$global-breakpoint}){
-            width:80px;
+            width: 75px !important;
             display: block;
-            float: none;
-            padding-bottom: 5px;
-            padding-left: 25px;
+            padding-bottom: 10px;
           }
         }
+
         p{
           @media only screen and (max-width: #{$global-breakpoint}){
-            font-size: 16px;
-            text-align: center;
+            font-size: 18px !important;
+            text-align: center !important;
+            vertical-align: middle;
           }
         }
         span{
@@ -291,11 +299,12 @@ html,
     padding-right: 25px !important;
   }
   .footer-social--kayak-logo{
-    vertical-align: middle;
     img{
       width:128px;
+
     }
-  } 
+  }
+
   .social-icons{
     .columns{
       padding:0 5px;
