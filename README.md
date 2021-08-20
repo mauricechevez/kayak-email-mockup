@@ -33,7 +33,7 @@ dark color: #14191e;
 ## Important Quirks
 A few issues occured along the way which I want to highlight here. 
 ### Columns stacking on top of each other in **Firefox**
-Despite the columns aligning correctly in Chrome, Firefox was not displaying the columns in the correct order. For example, if I wanted 2 columns next to each other, Chrome would display it correctly, but Firefox did not. THe solution found was to add the following code under the container row.
+Despite the columns aligning correctly in Chrome, Firefox was not displaying the columns in the correct order. For example, if I wanted 2 columns next to each other, Chrome would display it correctly, but Firefox did not. THe solution found was to add the following code under the container **row**.
 ```css
  white-space: nowrap;
 ```
@@ -68,6 +68,20 @@ First target the .columns (`<columns>` in the HTML), then nest the `th` selector
     }
   }
 }
+```
+### The Center Tag expanding issues
+![center tag issue](./img-screenshots/center-tag-expanding.png)
+The image with the 4 grouped icons kept expanding the email container (width should not exceed 596px). All the `!important` added to the values didn't help. 
+**Solution**
+Targetting the `<center>` and removing the min-width placed by the built in grid css solved this problem.
+```css
+ &.last-offer{
+          center{
+            min-width: 0;
+          }
+          .grouped-icons{
+            width: 190px;
+          }
 ```
 
 ---

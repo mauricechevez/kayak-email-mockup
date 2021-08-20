@@ -3,7 +3,6 @@ layout: kayak
 subject: Today's Great Vacation Deals
 ---
 <container style="max-width: 600px !important;">
-{{> header}}
 <!--Deal of Day section-->
 <row class="deal">
     <columns>
@@ -31,14 +30,16 @@ subject: Today's Great Vacation Deals
         </row>
     </columns>
 </row>
-
-<!--Sub Footer-->
-<!-- <row class="sub-footer">
-    <columns>
-    <center><img src="https://via.placeholder.com/180x30" alt="" style="text-align:center"></center>
-    <p class="text-center" id="still-looking">Still Looking? There's more</p>
-    <p class="text-center" id="package-text">Search hundreds of deals to suit your budget on flights, packages, cruises and more.</p>
-    <p class="text-center"><a href="#" class="btn-deal">See All Deals</a></p>
+<row class="more-deals">
+    <columns id="more-deals__container">
+        <row>
+            <columns class="more-deals__details last-offer">
+                <center><img src="{{root}}/assets/img/airplane_dark.png" class="grouped-icons"></center>
+                <h3 class="text-center">Still looking? There's more</h3>
+                <p class="text-center last-offer--text">Search hundreds of deals to suit your budget on flights, packages, cruises and more.</p>
+                <p class="text-center"><a href="#" class="btn-deal">See All Deals</a></p>
+            </columns>
+        </row>
     </columns>
-</row> -->
+</row>
 </container>
