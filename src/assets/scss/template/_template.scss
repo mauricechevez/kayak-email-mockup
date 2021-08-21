@@ -199,14 +199,19 @@ html,
   .sub-footer{
     background:$kayak-semidark;
     background-color: $kayak-semidark;
+    /* FIXED!!!!! Write about this */
+    table, tr, td, th{
+      vertical-align: middle;
+    }
     .columns.sub-footer__container{
       padding-top:25px;
       padding-bottom:25px;
       padding-left:25px;
       padding-right:25px;
+
      
       .kayak-circle--logo{
-        width:40px;
+        width:35px;
         margin-right: 10px;
       }
       p{
@@ -254,7 +259,7 @@ html,
 
         p{
           @media only screen and (max-width: #{$global-breakpoint}){
-            font-size: 18px !important;
+            font-size: 17px !important;
             text-align: center !important;
             vertical-align: middle;
           }
