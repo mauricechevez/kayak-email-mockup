@@ -16,7 +16,7 @@ subject: Great Deals Today
     </columns>
 </row>
 <!--More Deals section-->
-<row class="more-deals">
+<!-- <row class="more-deals">
     <columns id="more-deals__container">
         <row>
             <columns class="more-deals__details">
@@ -29,7 +29,26 @@ subject: Great Deals Today
             </columns>
         </row>
     </columns>
+</row> -->
+<!-- Repeated section -->
+{{#each kayakEmail.offers}}
+<row class="more-deals">
+    <columns id="more-deals__container">
+        <row>
+            <columns class="more-deals__details">
+                <img src="{{this.img_url}}" alt="{{this.location}}" title={{this.location}}>
+                <h3 class="text-center">{{this.location}}: {{this.offer_description}}</h3>
+                <p class="text-center pct-number small-text">Save up to {{this.savePct}}%</p>
+                <p class="text-center smaller-text">{{this.tinyInfo}}</p>
+                <p class="text-center price">${{this.price}}+</p>
+                <p class="text-center"><a href="{{this.link_to_deal}}" class="btn-deal">See Deal</a></p>
+            </columns>
+        </row>
+    </columns>
 </row>
+{{/each}}
+
+<!-- End of Repeated section -->
 <row class="more-deals">
     <columns id="more-deals__container">
         <row>

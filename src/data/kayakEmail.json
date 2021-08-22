@@ -12,7 +12,7 @@
     "offers":[{            
             "location":"Cancun",
             "offer_description":"4 nights with air and Melody Maker Cancun stay. Price reflects MIA departure, other cities available.",
-            "img_url":"assets/img/cancun.png",
+            "img_url":"/assets/img/cancun.png",
             "savePct":"65",
             "tinyInfo":"CheapCarribean.com",
             "price":"689",
@@ -21,10 +21,20 @@
     {
         "location":"China",
         "offer_description":"10 nights in Beijing, China with air and Shangri-La stay. Price reflects NYC departure",
-        "img url":"assets/img/china.png",
+        "img_url":"/assets/img/china.jpg",
         "savePct": "50",
         "tinyInfo":"Cheapo-Air.com",
         "price":"749",
         "link_to_deal":"#"
-    }]
+    },
+    {
+        "location":"London",
+        "offer_description":"15 nights in London, England with air and Benny Hill Hotel stay. Price reflects BOS departure",
+        "img_url":"/assets/img/london.png",
+        "savePct": "70",
+        "tinyInfo":"RyanAir.com",
+        "price":"499",
+        "link_to_deal":"#"
+    }
+    ]
 }

@@ -127,6 +127,28 @@ To access items from an array, you have to add a `.` between the array item's in
 ```html
 <img src="{{kayakEmail.offers.[0].img_url}}" alt="Cancun">
 ```
+## Helper functions
+### Getting the current year
+For the copyright section, I created the following helper function. Its'a shortened version of this tutorial. This allows me to keep the year in the footer so once the year changes, there's no need to update this section.
+```js
+module.exports = function(){
+    const year = new Date().getFullYear();
+    return year;
+}
+```
+Example:
+**`© 2021 Kayak Software Company`**
+
+Embedding into the page:
+```html
+<row class="copyright">
+        <columns>
+        <p>&copy; {{getYear}} Kayak Software Company</p>
+        <p>7 Market Street Stamford, CT 06902-5810 US</p>
+        </columns>
+</row>
+```
+
 
 ---
 ### Copyright Notice
