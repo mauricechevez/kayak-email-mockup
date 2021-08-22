@@ -1,18 +1,18 @@
 ---
 layout: kayak
-subject: Today's Great Vacation Deals
+subject: Great Deals Today
 ---
 <container style="max-width: 600px !important;">
 <!--Deal of Day section-->
 <row class="deal">
     <columns>
     <h1 class="text-center">Deal of the Day</h1>
-    <img src="{{root}}/assets/img/ireland.png">
-    <p>Ireland: 8 days with air, hotel and care rental. use promo code CFDL110 to save. Price reflects NYC departure. Other cicties available.</p>
-    <p  class="small-text">Save $110 with code</p>
-    <p class="smaller-text">Gate 1 Travel</p>
-    <p class="text-center price">$650+</p>
-    <p><a class="btn-deal " href="#">See Deal</a></p>
+    <img src="{{kayakEmail.dealOfTheDay.img_url}}" alt="{{kayakEmail.dealOfTheDay.location}}" title="{{kayakEmail.dealOfTheDay.location}}">
+    <p>{{kayakEmail.dealOfTheDay.location}}: {{kayakEmail.dealOfTheDay.deal_description}}</p>
+    <p class="small-text">Save ${{kayakEmail.dealOfTheDay.saveAmount}} with code</p>
+    <p class="smaller-text">{{kayakEmail.dealOfTheDay.tinyInfo}}</p>
+    <p class="text-center price">${{kayakEmail.dealOfTheDay.price}}+</p>
+    <p><a class="btn-deal" href="{{kayakEmail.dealOfTheDay.link_to_deal}}">See Deal</a></p>
     </columns>
 </row>
 <!--More Deals section-->
@@ -20,12 +20,12 @@ subject: Today's Great Vacation Deals
     <columns id="more-deals__container">
         <row>
             <columns class="more-deals__details">
-                <img src="{{root}}/assets/img/cancun.png" alt="">
-                <h3 class="text-center">Cancun: 4 nights with air and Melody Maker Cancun stay. Price reflects MIA departure, other cities available.</h3>
-                <p class="text-center pct-number small-text">Save up to 65%</p>
-                <p class="text-center smaller-text">CheapCaribbean.com</p>
-                <p class="text-center price">$689+</p>
-                <p class="text-center"><a href="#" class="btn-deal">See Deal</a></p>
+                <img src="{{kayakEmail.offers.[0].img_url}}" alt="Cancun">
+                <h3 class="text-center">{{kayakEmail.offers.[0].location}}: {{kayakEmail.offers.[0].offer_description}}</h3>
+                <p class="text-center pct-number small-text">Save up to {{kayakEmail.offers.[0].savePct}}%</p>
+                <p class="text-center smaller-text">{{kayakEmail.offers.[0].tinyInfo}}</p>
+                <p class="text-center price">${{kayakEmail.offers.[0].price}}+</p>
+                <p class="text-center"><a href="{{kayakEmail.offers.[0].link_to_deal}}" class="btn-deal">See Deal</a></p>
             </columns>
         </row>
     </columns>

@@ -102,8 +102,31 @@ I noticed toward the end of the designing, that I had less problems when  used m
 
 ---
 ## Creating Data
-The benefit of using this framework is not having to have static information within the HTML. Instead, we can utilize a JSON file and just like other web frameworks, this data can be dynamically placed into the page. In this case, it will be compiled into the email body. 
+The benefit of using this framework is not having to have static information within the HTML. Instead, we can utilize a JSON file and just like other web framework, this data can be dynamically placed into the page. In this case, it will be compiled into the email body. 
 Why is this valuable? Because to update the email, as long as no style changes need to be made, we just update the JSON file, just like if it were a database object.
+
+### The JSON file
+Please see the [json](src/data/kayakEmail.json) file of this project for details. 
+**Don't Forget** to add the data file location to the `gulpfile.babel.js` file
+```
+function pages() {
+  return gulp.src(['src/pages/**/*.html', '!src/pages/archive/**/*.html'])
+    .pipe(panini({
+      root: 'src/pages',
+      layouts: 'src/layouts',
+      partials: 'src/partials',
+      helpers: 'src/helpers',
+      data:'src/data'   <------------ THIS 
+    }))
+    .pipe(inky())
+    .pipe(gulp.dest('dist'));
+}
+```
+### Accessing array items 
+To access items from an array, you have to add a `.` between the array item's index number. Normally I wouldn't have to do this.
+```html
+<img src="{{kayakEmail.offers.[0].img_url}}" alt="Cancun">
+```
 
 ---
 ### Copyright Notice

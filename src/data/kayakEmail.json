@@ -3,10 +3,28 @@
     "dealOfTheDay":{
         "img_url":"/assets/img/ireland.png",
         "location":"Ireland",
-        "deal_description":"Ireland: 8 days with air, hotel and care rental. use promo code CFDL110 to save. Price reflects NYC departure. Other cities available.",
+        "deal_description":"8 days with air, hotel and care rental. use promo code CFDL110 to save. Price reflects NYC departure. Other cities available.",
         "saveAmount":"110",
         "tinyInfo":"Gate 1 Travel",
         "price":"649",
         "link_to_deal":"#"
-    }
+    },
+    "offers":[{            
+            "location":"Cancun",
+            "offer_description":"4 nights with air and Melody Maker Cancun stay. Price reflects MIA departure, other cities available.",
+            "img_url":"assets/img/cancun.png",
+            "savePct":"65",
+            "tinyInfo":"CheapCarribean.com",
+            "price":"689",
+            "link_to_deal":"#"
+    },
+    {
+        "location":"China",
+        "offer_description":"10 nights in Beijing, China with air and Shangri-La stay. Price reflects NYC departure",
+        "img url":"assets/img/china.png",
+        "savePct": "50",
+        "tinyInfo":"Cheapo-Air.com",
+        "price":"749",
+        "link_to_deal":"#"
+    }]
 }
