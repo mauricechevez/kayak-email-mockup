@@ -1,7 +1,7 @@
 {
     "title":"Fly to Ireland with less than $700 round trip, plus more!",
     "dealOfTheDay":{
-        "img_url":"/assets/img/ireland.png",
+        "img_url":"https://i.postimg.cc/tTHmvbxh/ireland.png",
         "location":"Ireland",
         "deal_description":"8 days with air, hotel and care rental. use promo code CFDL110 to save. Price reflects NYC departure. Other cities available.",
         "saveAmount":"110",
@@ -12,7 +12,7 @@
     "offers":[{            
             "location":"Cancun",
             "offer_description":"4 nights with air and Melody Maker Cancun stay. Price reflects MIA departure, other cities available.",
-            "img_url":"/assets/img/cancun.png",
+            "img_url":"https://i.postimg.cc/qBxWYNQg/cancun.png",
             "savePct":"65",
             "tinyInfo":"CheapCarribean.com",
             "price":"689",
@@ -21,7 +21,7 @@
     {
         "location":"China",
         "offer_description":"10 nights in Beijing, China with air and Shangri-La stay. Price reflects NYC departure",
-        "img_url":"/assets/img/china.jpg",
+        "img_url":"https://i.postimg.cc/bvSKFLFj/china.jpg",
         "savePct": "50",
         "tinyInfo":"Cheapo-Air.com",
         "price":"749",
@@ -30,7 +30,7 @@
     {
         "location":"London",
         "offer_description":"15 nights in London, England with air and Benny Hill Hotel stay. Price reflects BOS departure",
-        "img_url":"/assets/img/london.png",
+        "img_url":"https://i.postimg.cc/Hx4vfNwF/london.png",
         "savePct": "70",
         "tinyInfo":"RyanAir.com",
         "price":"499",

@@ -15,7 +15,9 @@ This is the intended result.
 ![project preview](./src/assets/img/email.png)
 
 ## Current Results
-![Current screenshot](./img-screenshots/current-aug8.png)
+![Current screenshot](./img-screenshots/complete-aug22.png)
+
+**Link to Live Result Coming Soon**
 
 ## Original project idea
 Codingphase.com's [HTML Email Frameworks](https://codingphase.teachable.com/p/html-email-frameworks)
@@ -129,7 +131,7 @@ To access items from an array, you have to add a `.` between the array item's in
 ```
 ## Helper functions
 ### Getting the current year
-For the copyright section, I created the following helper function. Its'a shortened version of this tutorial. This allows me to keep the year in the footer so once the year changes, there's no need to update this section.
+For the copyright section, I created the following helper function. Its'a shortened version of this tutorial [https://zurb.com/university/lessons/108](https://zurb.com/university/lessons/108). This allows me to keep the year in the footer so once the year changes, there's no need to update this section.
 ```js
 module.exports = function(){
     const year = new Date().getFullYear();
@@ -139,7 +141,7 @@ module.exports = function(){
 Example:
 **`© 2021 Kayak Software Company`**
 
-Embedding into the page:
+Embedding into the page using the returned data:
 ```html
 <row class="copyright">
         <columns>
@@ -148,7 +150,9 @@ Embedding into the page:
         </columns>
 </row>
 ```
-
+---
+# Exporting Finished Product
+First, run `npm run build` to compile all the inlined styles and minified images. The code you need to provide is in `/dist/`. In this case, I used `index.html`. 
 
 ---
 ### Copyright Notice
