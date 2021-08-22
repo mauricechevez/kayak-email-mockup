@@ -16,21 +16,6 @@ subject: Great Deals Today
     </columns>
 </row>
 <!--More Deals section-->
-<!-- <row class="more-deals">
-    <columns id="more-deals__container">
-        <row>
-            <columns class="more-deals__details">
-                <img src="{{kayakEmail.offers.[0].img_url}}" alt="Cancun">
-                <h3 class="text-center">{{kayakEmail.offers.[0].location}}: {{kayakEmail.offers.[0].offer_description}}</h3>
-                <p class="text-center pct-number small-text">Save up to {{kayakEmail.offers.[0].savePct}}%</p>
-                <p class="text-center smaller-text">{{kayakEmail.offers.[0].tinyInfo}}</p>
-                <p class="text-center price">${{kayakEmail.offers.[0].price}}+</p>
-                <p class="text-center"><a href="{{kayakEmail.offers.[0].link_to_deal}}" class="btn-deal">See Deal</a></p>
-            </columns>
-        </row>
-    </columns>
-</row> -->
-<!-- Repeated section -->
 {{#each kayakEmail.offers}}
 <row class="more-deals">
     <columns id="more-deals__container">
@@ -48,7 +33,6 @@ subject: Great Deals Today
 </row>
 {{/each}}
 
-<!-- End of Repeated section -->
 <row class="more-deals">
     <columns id="more-deals__container">
         <row>
