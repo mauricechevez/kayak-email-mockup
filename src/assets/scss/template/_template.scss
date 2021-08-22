@@ -118,6 +118,9 @@ html,
     color: white;
     text-align: center !important;
   }
+  a:hover{
+    color:white !important;
+  }
   p{
     color:white;
     font-weight: 900;
@@ -199,7 +202,6 @@ html,
   .sub-footer{
     background:$kayak-semidark;
     background-color: $kayak-semidark;
-    /* FIXED!!!!! Write about this */
     table, tr, td, th{
       vertical-align: middle;
     }
@@ -228,13 +230,11 @@ html,
         margin-right:5px;
         width:120px;
         height: 40px;
-        // object-fit: contain;
        
       }
       #playstore{
         width:120px;
         height: 40px;
-        // object-fit: contain;
       }
 
       #appstore, #playstore{
@@ -292,9 +292,6 @@ html,
   }
 
 .footer-social{
-  // *{
-  //   outline:hotpink 2px solid;
-  // }
   background: $kayak-darkcolor;
   background-color: $kayak-darkcolor;
   & > tbody > tr > th{
@@ -320,10 +317,107 @@ html,
 
     }
   }
+  
+}
+.footer-menu{
+  background: $kayak-darkcolor;
+  background-color: $kayak-darkcolor;
+  white-space: nowrap;
+  border-top: 1px solid $kayak-bottomborder;
+  border-bottom: 1px solid $kayak-bottomborder;
+  .columns{
+    padding-top: 5px;
+    padding-bottom: 5px!important;
+    padding-left: 10px!important;
+    padding-right: 10px!important;
+    span{
+      display:block; height: 20px; width:2px; background:$kayak-bottomborder; background-color: $kayak-bottomborder;
+    }
+    th{
+      text-align: center;
+    }
+    
+  }
+  .footer-menu__divider{
+    padding-top: 5px;
+    padding-bottom: 0px!important;
+    padding-left: 0px!important;
+    padding-right: 0px!important;
+  }
+  a{
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  img{
+    margin-right:10px;
+  
+  }
+}
+.footer-bottom{
+  .columns{
+    background:$kayak-darkcolor;
+    background-color: $kayak-darkcolor;
+    padding-top: 30px;
+    padding-bottom: 10px;
+  }
+  a{
+    color: white;
+    font-weight: 600;
+    font-size: 14px !important;
+    display: inline-block;
+    padding-right: 10px;
+  }
+  a:last-child{
+    padding:0;
+  }
+  a:hover{
+    color: $primary-color !important;;
+  }
+}
+.info-privacy{
+  .columns{
+    background:$kayak-darkcolor;
+    background-color: $kayak-darkcolor;
+    padding-bottom: 30px;
+    padding-right: 30px !important;
+    padding-left: 30px !important;
+  }
+  p{
+    color: $dark-gray;
+    font-size: 12px;
+    font-weight: 500;
+  }
+}
+.copyright{
+  .columns{
+    background:$kayak-darkcolor;
+    background-color: $kayak-darkcolor;
+    padding-bottom: 30px;
+    padding-right: 30px !important;
+    padding-left: 30px !important;
+  }
+  p{
+    color: white;
+    font-size: 14px !important;
+    font-weight: 600;
+    margin-bottom: 5px !important;
+  }
+
 }
 
 /* Top padding 30px side padding 25px
 125px for orange kayak logo */
+
+
+
+
+
+
+
+
+
+
 
 /* BUILT IN stuff below */
 
@@ -362,4 +456,9 @@ table.button.google table td {
 
 .wrapper.secondary {
   background: #f3f3f3;
+}
+
+@media all {
+  // typography
+    a:hover {color: #d65600 !important }
 }

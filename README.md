@@ -83,6 +83,27 @@ Targetting the `<center>` and removing the min-width placed by the built in grid
             width: 190px;
           }
 ```
+### Vertical aligning nested elements
+This one took me a while! Only by examining the the Developer tools in Chrome or Firefox could I see how to narrow down the specific nested elements I needed to vertically align the pictures. This only affected the mobile view.
+The solution was to target the child and descendent children up to to the `th` element which contained the content needing to be vertically align down the middle.
+
+![vertical alignment](./img-screenshots/vert-align.png)
+```css
+.sub-footer{
+    ...
+    background-color: $kayak-semidark;
+    table, tr, td, th{
+      vertical-align: middle;
+    }
+```
+### Being specific with classes
+To not fight so much with this framework, I believe I should add more class names to the rows and tables.
+I noticed toward the end of the designing, that I had less problems when  used more class names instead of  I think that helped with specifying things like padding, the `center` tag not adding a min-width that enlarged the entire body, margins, etc. 
+
+---
+## Creating Data
+The benefit of using this framework is not having to have static information within the HTML. Instead, we can utilize a JSON file and just like other web frameworks, this data can be dynamically placed into the page. In this case, it will be compiled into the email body. 
+Why is this valuable? Because to update the email, as long as no style changes need to be made, we just update the JSON file, just like if it were a database object.
 
 ---
 ### Copyright Notice
